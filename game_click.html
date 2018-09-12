@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<script>
+
+var jogar = "S";
+
+while(jogar == "S"){
+    var sexo = window.prompt("Olá digite H se você for Homem, ou M para Mulher");
+
+    var click = 0;
+
+    if(sexo == 'H'){
+       click = 10;
+    }else if(sexo == 'M'){
+       click = 8;
+    }
+
+    do{
+       window.alert("faltam " + click + "clicks");
+       click--;
+    }while(click > 0);
+
+    jogar = window.prompt("Deseja continuar jogando? S-N");
+}
+
+
+  var  trofeu = window.prompt("Obrigado por jogar! escolha seu trofeu: banana,abacaxi,laranja ou uva");
+
+switch(trofeu){
+    case "banana" : window.alert("escolheu banana");
+        break;
+    case "laranja" : window.alert("escolheu laranja");
+        break;
+    case "abacaxi" : window.alert("escolheu abacaxi");
+        break;
+    case "uva" : window.alert("escolheu uva");
+        break;
+    default: window.alert("escolheu nada, verificar");
+}
+
+window.alert("receba seu trofeu" +trofeu );
+
+</script>
+
+</body>
+</html> 
